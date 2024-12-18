@@ -1,6 +1,5 @@
 import os
 from typing import Any
-import autogen
 
 from autogen.agentchat import ConversableAgent
 from fastagency import UI
@@ -11,6 +10,9 @@ llm_config = {
         {
             "model": "gpt-4o-mini",
             "api_key": os.getenv("OPENAI_API_KEY"),
+            "api_type": "azure",
+            "base_url": os.getenv("AZURE_API_ENDPOINT"),
+            "api_version": "2024-02-01",
         }
     ],
     "temperature": 0.8,
