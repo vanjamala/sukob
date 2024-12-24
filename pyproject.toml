@@ -8,7 +8,7 @@ version = "0.1.0"
 name = "sukob"
 
 dependencies = [
-    "fastagency[autogen,mesop,server,fastapi,basic_auth]>=0.3.0",
+    "fastagency[autogen,mesop,server,openapi,fastapi,basic_auth]>=0.3.0",
 ]
 
 [project.optional-dependencies]
