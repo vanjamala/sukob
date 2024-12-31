@@ -9,6 +9,11 @@ name = "sukob"
 
 dependencies = [
     "fastagency[autogen,mesop,server,openapi,fastapi,basic_auth]>=0.3.0",
+    "pandas>=2",
+    "openpyxl>=3.1",
+    "google-api-python-client>=2.151",
+    "google-auth-httplib2>=0.2",
+    "google-auth-oauthlib>=1.2.1",
 ]
 
 [project.optional-dependencies]
@@ -105,6 +110,8 @@ select = [
 ignore = [
     "E501",  # line too long, handled by formatter later
     "D100", "D101", "D102", "D103", "D104",
+    "T201",
+    "N806",
 #     "C901",  # too complex
 ]
 
