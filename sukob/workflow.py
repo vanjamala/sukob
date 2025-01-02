@@ -135,6 +135,7 @@ def import_table() -> Optional[str]:
 
         # Convert the DataFrame to a JSON string
         df_json = df.to_json(orient="records")
+        print(df_json)
 
         return df_json  # type: ignore[no-any-return]
 
